@@ -10,6 +10,14 @@ $(document).ready(function(){
     }
 	$('.collapsible').collapsible();
 
+	if ($(window).width()< 1230){
+   		$(".imagen_logoMinsa").attr("src","img/logo_minsa.jpg");
+   		if($(document).scrollTop() == 0){
+   			$(".imagen_logoMinsa").attr("src","img/logo_minsa.jpg");
+   			$(".imagen_logoMinsa").css("padding", "10% 0 0 0;")
+   		}
+   	}  
+
 	$(window).scroll(function() { 
 		if ($(document).scrollTop() > 50) { 
 			$("#menu_navbar").css("height", "65px");
@@ -34,7 +42,8 @@ $(document).ready(function(){
 				$(".imagen_logoMinsa").attr("src","img/logo_minsa.jpg");
 				$(".imagen_logoMinsa")	.css("padding", "12% 0");
 			} 
-   		}      
+   		}
+
 	});
 
 	$('a[href*="#"]:not([href="#"])').click(function() {

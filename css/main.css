@@ -95,7 +95,7 @@ nav a.button-collapse{
 	border: none;
 }
 #imgDoctorObjetivos{
-	/*height: 100vh;*/
+	height: 100vh;
 	padding: 0 0 52% 0;
     background-size: cover;
     background-image: url(../img/senior-doctor.jpg);
@@ -117,6 +117,7 @@ nav a.button-collapse{
 }
 .textObjetivos{
 	width: 90%;
+	padding: 0 0 5% 0;
 }
 .colorBackground{
 	padding: 6% 0;
@@ -347,24 +348,70 @@ footer{
 }
 
 @media screen and (max-width: 1366px) and (max-height: 768px) {	
+	#section_two {
+	    margin-top: -5%;
+	}
 	#imgDoctorObjetivos {
 	    height: 0; 
 	    padding-bottom: 65%;
 	}
 }
-@media screen and (max-width: 1024px) and (max-height: 768px) {	
+@media screen and (max-width: 1024px) and (max-height: 768px) {
+	#section_two {
+	    margin-top: -7%;
+	}	
 	#imgDoctorObjetivos {
 	    height: 0; 
-	    padding-bottom: 90%;
+	    padding-bottom: 90% !important;
+	}
+	.content_infoCard {
+	    width: 100%;
+	    margin: 0;
 	}
 }
-@media screen and (max-width: 768px){	
+@media screen and (max-width: 1280px) and (max-height: 800px) {	
 	#imgDoctorObjetivos {
-	    background-position-y: -200px;
+	    height: 0; 
+	    padding-bottom: 70%;
 	}
 }
-@media screen and (max-width: px){	
+@media screen and (max-width: 768px){
+	#section_two {
+	    margin-top: -12%;
+	}	
+	#imgDoctorObjetivos {
+	    height: 0;
+	    /* background-position-y: -200px; */
+	    padding: 0 0 70% 0;
+	    background-position-y: -129px;
+	}
+	.content_infoCard {
+	    width: 100%;
+	    margin: 0 0 5% 0;
+	}
+}
+@media screen and (max-width: 320px){	
 	#imgDoctorObjetivos {
 	    background-position-y: -100px;
+	}
+	.content_infoCard {
+	    width: 100%;
+	    /* margin: 5px 0 0 10%; */
+	}
+}
+@media screen and (max-width: 400px){
+	#section_two {
+	    margin-top: -14%;
+	}
+	#inf_objetivos {
+    	padding: 8% 0 8% 8%;
+	}
+	#imgDoctorObjetivos {
+	    background-position-y: -23px;
+	    background-repeat: no-repeat;
+	}	
+	.content_infoCard {
+	    width: 100%;
+	    margin: 3% 0 3% 0;
 	}
 }
