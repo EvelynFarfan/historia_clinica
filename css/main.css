@@ -26,7 +26,8 @@ nav a.button-collapse{
 	background-color: #f8f9fb;
 }
 #section_two{
-	padding: 8% 0 8% 0;;
+	padding: 8% 0 8% 0;
+	margin-top: -4%;
 }
 #section_six{
 	padding: 15% 0;
@@ -94,7 +95,8 @@ nav a.button-collapse{
 	border: none;
 }
 #imgDoctorObjetivos{
-	height: 100vh;
+	/*height: 100vh;*/
+	padding: 0 0 52% 0;
     background-size: cover;
     background-image: url(../img/senior-doctor.jpg);
     padding-left: 0;
@@ -276,12 +278,15 @@ footer{
 }
 /*- - - - - - - - - - - footer- - - - - - - - - - -*/
 
-@media(min-width: 300px) and (max-width: 770px){
+@media(min-width: 1900px) and (max-width: 770px){
 	.contenTitulo {
     	margin-bottom: 10%;
 	}
 	.img-doctor-two{
 		background-image: url(../img/paciente_doctor.jpg);
+	}
+	#section_one{
+		height: inherit;
 	}
 	#section_two, #section_two_two, #section_three,#section_four, #section_five, #section_six{
 		height: initial;
@@ -341,5 +346,25 @@ footer{
 	}
 }
 
-@media screen and (min-width: 1360px) and (min-height: 768px) {
+@media screen and (max-width: 1366px) and (max-height: 768px) {	
+	#imgDoctorObjetivos {
+	    height: 0; 
+	    padding-bottom: 65%;
+	}
+}
+@media screen and (max-width: 1024px) and (max-height: 768px) {	
+	#imgDoctorObjetivos {
+	    height: 0; 
+	    padding-bottom: 90%;
+	}
+}
+@media screen and (max-width: 768px){	
+	#imgDoctorObjetivos {
+	    background-position-y: -200px;
+	}
+}
+@media screen and (max-width: px){	
+	#imgDoctorObjetivos {
+	    background-position-y: -100px;
+	}
 }
