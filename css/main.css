@@ -1,0 +1,345 @@
+/*#fb3d50*/
+/*#00a5bb*/
+#menu_navbar{
+	height: 8rem;
+	background-color: #fff;
+	padding: 30px 50px 0 50px;
+}
+.mb0{
+	margin-bottom: 0;
+}
+nav ul a{
+	color: #3e3a48!important;
+	font-family: 'Montserrat', sans-serif;
+}
+ul a.enlaceMenu:hover{
+	background-color: #336699!important;
+    color: #ffffff!important;
+}
+nav a.button-collapse{
+	color: #000;
+}
+#section_one{
+	height: 100vh;
+}
+#section_two, #section_seven{
+	background-color: #f8f9fb;
+}
+#section_two{
+	padding: 8% 0 8% 0;;
+}
+#section_six{
+	padding: 15% 0;
+}
+#section_seven {
+    padding: 8% 0 8% 0;
+}
+.colVideo{
+	padding: 8% 0 0 5% !important;
+}
+.contentVideo{
+	width: 100%;
+	margin: 0 auto;
+}
+.que_es, .objetivos{
+	text-align: justify;
+}
+.contenTitulo{
+	margin-bottom: 5%;
+}
+.logo{
+	width:30%;
+	margin-top: 4.5%;
+}
+.fs17{
+	font-size: 17px;
+}
+.mb5{
+	margin-bottom: 5%;
+}
+.sliderSize{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.img-doctor-one{
+	background-image: url(../img/doctor_paciente.jpg);
+}
+.img-doctor-two{
+	background-image: url(../img/img_slider_2.jpg);
+}
+.img-doctor-three{
+	background-image: url(../img/doctor_historia.jpg);
+}
+/* ---------------------Prueba.html ---------------------*/
+#contentLogoCitas{
+	top: 60%;
+    left: 5%;
+    right: 100%;
+}
+.buttonPresentacion{
+	background-color: #336699;
+    border: none;
+    color: #fff;
+    padding: 1% 10%;
+    border-radius: 5px;
+    margin-top: 3%;
+    text-transform: uppercase;
+}
+.que_es, .contentPreguntas{
+	margin:0 auto;
+}
+.contentVideo{
+	height: 500px;
+	border: none;
+}
+#imgDoctorObjetivos{
+	height: 100vh;
+    background-size: cover;
+    background-image: url(../img/senior-doctor.jpg);
+    padding-left: 0;
+}
+.texto_quees{
+	padding-bottom: 5%;
+}
+.tittle{
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+}
+#inf_objetivos{
+	padding: 3% 0 0 4%;
+}
+.titulObjetivos{
+	padding-top: 5%;
+}
+.textObjetivos{
+	width: 90%;
+}
+.colorBackground{
+	padding: 6% 0;
+	background-color: #336699;
+}
+.textWhite{
+	color: #fff;
+}
+/*- - - - - - - - - - - - eventos- - - - - - - - -  - */
+#eventoHome{
+	width: 100%;
+    padding: 5%;
+    background: #fff;
+}
+.content_infoCard{
+	width: 80%;
+	margin: 5px 0 0 10%;
+}
+.estilo{
+	color: #fff!important;
+	font-family: 'Montserrat', sans-serif;
+}
+.estiloHome{
+	color: #3e3a48!important;
+    font-family: 'Montserrat', sans-serif;
+}
+.eventoLink{
+	padding: 4%;
+	border:2px solid #fff!important;
+	color: #fff!important;
+}
+.eventoLinkHome{
+	padding: 4%;
+	border:2px solid #336699!important;
+	color: #336699!important;
+}
+.eventoLink:hover{
+	background-color: #fff;
+	color: #336699!important;
+}
+.eventoLinkHome:hover{
+	background-color: #336699;
+	color: #fff!important;
+}
+.eventoLink2{
+	width: 60%;
+	margin-left: 18%;
+}
+.eventoLink2 p{
+	padding: 2%;
+}
+#evento{
+    width: 100%;
+    padding: 5%;
+}
+.card .cardContenedor{
+	height: 17rem;
+}
+.arrows{
+	float: right;
+}
+.bt-line{
+	border: 1px solid #e5e5e5;
+	margin-bottom: 2%;
+}
+.descarga{
+	margin-top: -2%;
+	float: right;
+}
+.card .card-content{
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+}
+.card .card-title{
+	font-size: 1.3rem!important;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating), .jornadaTitulo p{
+	color: #336699!important;
+}
+/*- - - - - - - - - - - - Comentarios - - - - - -- - -  -*/
+.comentarios .container .row input.borderWhite{
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+.comentarios .container .row textarea.borderWhite{
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+.comentarios .container .row label.textWhite{
+	color: #fff;
+}
+.buttonComentarios{
+	width: 100%;
+	margin: 0 0 5% 0;
+	color: #369;
+}
+/*- - - - - - - - - - - - Normativas - - - - - -- - -  -*/
+.normativas{
+	padding:5% 0;
+}
+.tableNormativa{
+	margin-bottom: 3%;
+}
+.pagination li.activado {
+    background-color: #336699;
+}
+/*- - - - - - - - - - - - Preguntas - - - - - -- - -  -*/
+.iconsPreguntas{
+	color:#336699;
+}
+.lineaColor{
+    width: 100px;
+    height: 3px;
+    background-color: #336699;
+    border: none;
+}
+.lineaWhite{
+    width: 100px;
+    height: 3px;
+    background-color: #fff;
+    border: none;
+}
+.lineaColor-objetivos{
+	width: 100px;
+    height: 3px;
+    background-color: #336699;
+    border: none;
+}
+/*- - - - - - - - - - - Galeria  - - - - - - - - - - -*/
+.imgShadow{
+	box-shadow: 2px 2px 5px #a1a1a1;
+}
+footer{
+	width: 100%;
+	padding: 1% 5%;
+	background-color: #336699;
+}
+/*- - - - - - - - - - - eventos - home- - - - - - - - - - -*/
+.contentEvento{
+	padding: 7% 0 5% 0;
+    background: #336699;
+}
+.tituloEvento{
+	padding-bottom: 2%;
+}
+.infEvento{
+	margin: 5% 0;
+    padding: 0 4%;
+}
+.icon_social{
+	margin-top: 5%;
+}
+.change-color{
+	background-color: black;
+}
+.botonVermas{
+	background: #336699;
+    padding: 1.5% 6%;
+}
+/*- - - - - - - - - - - footer- - - - - - - - - - -*/
+
+@media(min-width: 300px) and (max-width: 770px){
+	.contenTitulo {
+    	margin-bottom: 10%;
+	}
+	.img-doctor-two{
+		background-image: url(../img/paciente_doctor.jpg);
+	}
+	#section_two, #section_two_two, #section_three,#section_four, #section_five, #section_six{
+		height: initial;
+	}
+	#section_two, #section_three, #section_five, #section_six{
+		padding: 10% 0;
+	}
+	#section_two_two{
+		padding-bottom: 10%;
+	}
+	.que_es, .eventos, .normativas, .comentarios, .contentPreguntas{
+		padding: 10% 0;
+	}
+	.content_infoCard{
+		width: 100%;
+		margin:  5% 0;
+	}
+	.titulObjetivos{
+		text-align: center;
+	}
+	.titulObjetivos p{
+		padding-left: 0;
+	}
+	#contentLogoCitas {
+    	top: 75%;
+	}
+	.logo_citas{
+		width: 350px;
+	}
+	.lineaColor-objetivos{
+		text-align: center;
+    	display: inline-block;
+	}
+	#inf_objetivos {
+	    padding: 0;
+	}
+	.textObjetivos {
+	    margin: 0 auto;
+	}
+	.contButtonPresentacion{
+		text-align: center;
+	}
+	#section_six{
+		text-align: justify;
+	}
+	.buttonComentarios{
+		width: 100%;
+    	margin: 0 0 5% 0;
+    	color: #369;
+	}
+	.colVideo{
+		padding: inherit !important;
+		margin-top: 5%;
+	}
+	.contentVideo{
+		height: inherit;
+	}
+}
+
+@media screen and (min-width: 1360px) and (min-height: 768px) {
+}
