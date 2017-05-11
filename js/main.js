@@ -12,10 +12,6 @@ $(document).ready(function(){
 
 	if ($(window).width()< 1230){
    		$(".imagen_logoMinsa").attr("src","img/logo_minsa.jpg");
-   		if($(document).scrollTop() == 0){
-   			$(".imagen_logoMinsa").attr("src","img/logo_minsa.jpg");
-   			$(".imagen_logoMinsa").css("padding", "10% 0 0 0;")
-   		}
    	}  
 
 	$(window).scroll(function() { 

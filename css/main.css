@@ -22,11 +22,14 @@ nav a.button-collapse{
 #section_one{
 	height: 100vh;
 }
+.slider .indicators .indicator-item.active {
+    background-color: #336699 !important;
+}
 #section_two, #section_seven{
 	background-color: #f8f9fb;
 }
 #section_two{
-	padding: 8% 0 8% 0;
+	padding: 8% 0 6% 0;
 	margin-top: -4%;
 }
 #section_six{
@@ -38,10 +41,6 @@ nav a.button-collapse{
 .colVideo{
 	padding: 8% 0 0 5% !important;
 }
-.contentVideo{
-	width: 100%;
-	margin: 0 auto;
-}
 .que_es, .objetivos{
 	text-align: justify;
 }
@@ -52,8 +51,8 @@ nav a.button-collapse{
 	width:30%;
 	margin-top: 4.5%;
 }
-.fs17{
-	font-size: 17px;
+.fs16{
+	font-size: 16px;
 }
 .mb5{
 	margin-bottom: 5%;
@@ -72,6 +71,27 @@ nav a.button-collapse{
 .img-doctor-three{
 	background-image: url(../img/doctor_historia.jpg);
 }
+.t1{
+	font-size: 60px;
+    font-weight: bold;
+    color: #0081c8 !important;
+    margin: 0;
+}
+.t2{
+	font-size: 50px;
+    font-weight: bold;
+    color: #005968 !important;
+    margin: 0;
+}
+.t3{
+	font-size: 40px;
+    font-weight: bold;
+    color: #658a96 !important;
+    margin: 0;
+}
+.sliderTop{
+	margin-top: 25%;
+}
 /* ---------------------Prueba.html ---------------------*/
 #contentLogoCitas{
 	top: 60%;
@@ -86,13 +106,13 @@ nav a.button-collapse{
     border-radius: 5px;
     margin-top: 3%;
     text-transform: uppercase;
+    display: flex;
 }
 .que_es, .contentPreguntas{
 	margin:0 auto;
 }
 .contentVideo{
 	height: 500px;
-	border: none;
 }
 #imgDoctorObjetivos{
 	height: 100vh;
@@ -305,9 +325,6 @@ footer{
 		width: 100%;
 		margin:  5% 0;
 	}
-	.titulObjetivos{
-		text-align: center;
-	}
 	.titulObjetivos p{
 		padding-left: 0;
 	}
@@ -342,9 +359,6 @@ footer{
 		padding: inherit !important;
 		margin-top: 5%;
 	}
-	.contentVideo{
-		height: inherit;
-	}
 }
 
 @media screen and (max-width: 1366px) and (max-height: 768px) {	
@@ -368,6 +382,12 @@ footer{
 	    width: 100%;
 	    margin: 0;
 	}
+	.colVideo {
+    	padding: 8% 0 0 0 !important;
+	}
+	.titulObjetivos{
+		text-align: center;
+	}
 }
 @media screen and (max-width: 1280px) and (max-height: 800px) {	
 	#imgDoctorObjetivos {
@@ -377,7 +397,7 @@ footer{
 }
 @media screen and (max-width: 768px){
 	#section_two {
-	    margin-top: -12%;
+	    margin-top: -14%;
 	}	
 	#imgDoctorObjetivos {
 	    height: 0;
@@ -413,5 +433,63 @@ footer{
 	.content_infoCard {
 	    width: 100%;
 	    margin: 3% 0 3% 0;
+	}_z
+}
+@media only screen and (max-width: 1200px){
+	#section_two {
+	    margin-top: -20%;
+	    padding: 15% 0 10% 0;
+	}
+	.buttonPresentacion {
+    	margin: 0 auto;
+	}
+	.titulObjetivos{
+		text-align: center;
+	}
+	.titulObjetivos{
+		text-align: center;
+	}
+	.lineaColor-objetivos {
+	    display: inline-block;
+	}
+	.colVideo {
+		height: initial;
+	    padding: 5% 0 0 0% !important;
+	}
+	.content_infoCard {
+	    width: 100%;
+	    margin: 10% 0 5% 0;
+	}
+	#imgDoctorObjetivos{
+		background-size: cover;
+    	background-position-y: 0px;
+	}
+	.contentVideo{
+		height: 315px;
+	}
+	.textObjetivos {
+	    width: 95%;
+	    padding: 0 0 10% 0;
+	}
+	.imagen_logoMinsa{
+		width: 135px;
+	}
+	.t1{
+		font-size: 45px
+	}
+	.t2{
+		font-size: 35px;
+	}
+	.t3{
+		font-size: 25px;
+	}
+	.sliderTop{
+		margin-top: 50%;
+	}
+	.slider .slides li img #slider_uno{
+		background-position-x: 67% !important;
+	}
+	.slider .slides li img #slider_tres{
+		background-position-x: 67% !important;
 	}
 }
