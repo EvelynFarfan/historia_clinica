@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+<meta name="description" content="El Registro Nacional de Historias Clínicas Electrónicas es la infraestructura tecnológica especializada en salud que administra las historias clínicas electrónicas dentro de los términos estrictamente necesarios para garantizar la seguridad y la calidad de la atención a los pacientes.">
+<title>REGISTRO NACIONAL DE HISTORIAS CLININCAS</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="vendors/materialize/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Roboto" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header>
+	    <div class="navbar-fixed">
+	        <nav id="menu_navbar">
+	            <div class="nav-wrapper"> <a href="#!" class="brand-logo"><img class="imagen_logoMinsa" src="img/minsa_logo.png"></a>
+	                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	                <ul class="right hide-on-med-and-down">
+	                    <li><a class="enlaceMenu" href="index.html">Inicio</a></li>
+				        <li><a class="enlaceMenu" href="#">¿Qué es?</a></li>
+				        <li><a class="enlaceMenu" href="#">Objetivos</a></li>
+				        <li><a class="enlaceMenu" href="eventos.html">Eventos</a></li>
+				        <li><a class="enlaceMenu" href="#">Normativa</a></li>
+				        <li><a class="enlaceMenu" href="#">Comentarios</a></li>
+				        <li><a class="enlaceMenu" href="#">Preguntas</a></li>
+	                </ul>
+	            </div>
+	        </nav>
+	    </div>
+	    <ul class="side-nav" id="mobile-demo">
+	        <li><a href="index.html">Inicio</a></li>
+	        <li><a href="#">¿Qué es?</a></li>
+	        <li><a href="#">Objetivos</a></li>
+	        <li><a href="eventos.html">Eventos</a></li>
+	        <li><a href="#">Normativa</a></li>
+	        <li><a href="#">Comentarios</a></li>
+	        <li><a href="#">Preguntas</a></li>
+	    </ul>
+	</header>
+	<section class="calendarEvents">
+		<div class="contenTitulo center">
+			<span class="tittle">EVENTOS</span>
+			<hr class="lineaColor"></hr>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m3 l3">
+					<div class="listaEventos mb10">
+						<div class="boxListaEventos boxProximosEvents seleccionado">
+							<div class="row mb0">
+								<a href="#">
+									<div class="col s10 m10 l10">
+										<span class="textGray">Próximos Eventos</span>
+									</div>
+									<div class="col s2 m2 l2">
+										<span class="circuloMenuEventos">x</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="boxListaEventos boxEstaSemana">
+							<div class="row mb0">
+								<a href="#">
+									<div class="col s10 m10 l10">
+										<span class="textGray">Está Semana</span>
+									</div>
+									<div class="col s2 m2 l2">
+										<span class="circuloMenuEventos">x</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="boxListaEventos boxProximaSemana">
+							<div class="row mb0">
+								<a href="#">
+									<div class="col s10 m10 l10">
+										<span class="textGray">Próxima Semana</span>
+									</div>
+									<div class="col s2 m2 l2">
+										<span class="circuloMenuEventos">x</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="boxListaEventos boxEsteMes">
+							<div class="row mb0">
+								<a href="#">
+									<div class="col s10 m10 l10">
+										<span class="textGray">Este Mes</span>
+									</div>
+									<div class="col s2 m2 l2">
+										<span class="circuloMenuEventos">x</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="boxListaEventos boxProximoMes">
+							<div class="row mb0">
+								<a href="#">
+									<div class="col s10 m10 l10">
+										<span class="textGray">Próximo Mes</span>
+									</div>
+									<div class="col s2 m2 l2">
+										<span class="circuloMenuEventos">x</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="boxListaEventos boxAntiguosEventos">
+							<div class="row mb0">
+								<a href="#">
+									<div class="col s10 m10 l10">
+										<span class="textGray">Antiguos Eventos</span>
+									</div>
+									<div class="col s2 m2 l2">
+										<span class="circuloMenuEventos">x</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="categorias mb10">
+						<div class="boxListaCategorias seleccionado">
+							<div class="row mb0">
+								<a href="#">
+									<div class="col s10 m10 l10">
+										<span class="textGray">Todas Las Categorías</span>
+									</div>
+									<div class="col s2 m2 l2">
+										<span class="circuloMenuEventos">x</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="boxListaCategorias">
+							<div class="row mb0">
+								<a href="#">
+									<div class="col s10 m10 l10">
+										<span class="textGray">{{Categoría}}</span>
+									</div>
+									<div class="col s2 m2 l2">
+										<span class="circuloMenuEventos">x</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="boxListaCategorias">
+							<div class="row mb0">
+								<a href="#">
+									<div class="col s10 m10 l10">
+										<span class="textGray">{{Categoría}}</span>
+									</div>
+									<div class="col s2 m2 l2">
+										<span class="circuloMenuEventos">x</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="boxListaCategorias">
+							<div class="row mb0">
+								<a href="#">
+									<div class="col s10 m10 l10">
+										<span class="textGray">{{Categoría}}</span>
+									</div>
+									<div class="col s2 m2 l2">
+										<span class="circuloMenuEventos">x</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m9 l9">
+					<div class="row">
+						<div class="col s12 m6 l6">
+							<div class="card darken-1">
+					            <div class="card-content">
+					            	<div class="mb5">
+					            		<span class="card-title">Historia Clínica Electrónica e Interoperabilidad en el Sector Salud</span>
+					              		<span class="fs13"><b>Organizado por:</b> {{Nombre de Institución}}</span>
+					            	</div>
+					              	<div>
+					              		<p><i class="material-icons tiny">today</i> {{ Fecha }}</p>
+				              			<p><i class="material-icons tiny">schedule</i> {{ Hora }}</p>
+				              			<p><i class="material-icons tiny">location_on</i> {{ Lugar }}</p>
+					              	</div>
+					            </div>
+					            <div class="card-action">
+					              <a href="eventos_uno.html">Más información</a>
+					            </div>
+					        </div>
+						</div>
+						<div class="col s12 m6 l6">
+							<div class="card darken-1">
+					            <div class="card-content">
+					            	<div class="mb5">
+					            		<span class="card-title">Jornada Internacional de Integración de Sistemas e Historia Clínica Electrónica</span>
+					              		<span class="fs13"><b>Organizado por:</b> {{Nombre de Institución}}</span>
+					            	</div>
+					              	<div>
+					              		<p><i class="material-icons tiny">today</i> {{ Fecha }}</p>
+				              			<p><i class="material-icons tiny">schedule</i> {{ Hora }}</p>
+				              			<p><i class="material-icons tiny">location_on</i> {{ Lugar }}</p>
+					              	</div>
+					            </div>
+					            <div class="card-action">
+					              <a href="#">Más información</a>
+					            </div>
+					        </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m6 l6">
+							<div class="card darken-1">
+					            <div class="card-content">
+					            	<div class="mb5">
+					            		<span class="card-title">Historia Clínica Electrónica e Interoperabilidad en el Sector Salud</span>
+					              		<span class="fs13"><b>Organizado por:</b> {{Nombre de Institución}}</span>
+					            	</div>
+					              	<div>
+					              		<p><i class="material-icons tiny">today</i> {{ Fecha }}</p>
+				              			<p><i class="material-icons tiny">schedule</i> {{ Hora }}</p>
+				              			<p><i class="material-icons tiny">location_on</i> {{ Lugar }}</p>
+					              	</div>
+					            </div>
+					            <div class="card-action">
+					              <a href="#">Más información</a>
+					            </div>
+					        </div>
+						</div>
+						<div class="col s12 m6 l6">
+							<div class="card darken-1">
+					            <div class="card-content">
+					            	<div class="mb5">
+					            		<span class="card-title">Jornada Internacional de Integración de Sistemas e Historia Clínica Electrónica</span>
+					              		<span class="fs13"><b>Organizado por:</b> {{Nombre de Institución}}</span>
+					            	</div>
+					              	<div>
+					              		<p><i class="material-icons tiny">today</i> {{ Fecha }}</p>
+				              			<p><i class="material-icons tiny">schedule</i> {{ Hora }}</p>
+				              			<p><i class="material-icons tiny">location_on</i> {{ Lugar }}</p>
+					              	</div>
+					            </div>
+					            <div class="card-action">
+					              <a href="#">Más información</a>
+					            </div>
+					        </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m6 l6">
+							<div class="card darken-1">
+					            <div class="card-content">
+					            	<div class="mb5">
+					            		<span class="card-title">Historia Clínica Electrónica e Interoperabilidad en el Sector Salud</span>
+					              		<span class="fs13"><b>Organizado por:</b> {{Nombre de Institución}}</span>
+					            	</div>
+					              	<div>
+					              		<p><i class="material-icons tiny">today</i> {{ Fecha }}</p>
+				              			<p><i class="material-icons tiny">schedule</i> {{ Hora }}</p>
+				              			<p><i class="material-icons tiny">location_on</i> {{ Lugar }}</p>
+					              	</div>
+					            </div>
+					            <div class="card-action">
+					              <a href="#">Más información</a>
+					            </div>
+					        </div>
+						</div>
+						<div class="col s12 m6 l6">
+							<div class="card darken-1">
+					            <div class="card-content">
+					            	<div class="mb5">
+					            		<span class="card-title">Jornada Internacional de Integración de Sistemas e Historia Clínica Electrónica</span>
+					              		<span class="fs13"><b>Organizado por:</b> {{Nombre de Institución}}</span>
+					            	</div>
+					              	<div>
+					              		<p><i class="material-icons tiny">today</i> {{ Fecha }}</p>
+				              			<p><i class="material-icons tiny">schedule</i> {{ Hora }}</p>
+				              			<p><i class="material-icons tiny">location_on</i> {{ Lugar }}</p>
+					              	</div>
+					            </div>
+					            <div class="card-action">
+					              <a href="#">Más información</a>
+					            </div>
+					        </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="paginacionEventos">
+							<div class="paginacion center">
+								<ul class="pagination">
+								    <li class="waves-effect "><a><i class="material-icons">chevron_left</i></a></li>
+								    <li class="waves-effect active"><a id="numUno">1</a></li>
+								    <li class="waves-effect "><a id="numDos">2</a></li>
+								    <li class="waves-effect "><a id="numTres">3</a></li>
+								    <li class="waves-effect "><a><i class="material-icons">chevron_right</i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>
+	<footer>
+		<p class="textWhite">Ministerio de Salud del Perú © Derechos Reservados 2013</p>
+	</footer>
+	<script type="text/javascript" src="vendors/jquery/js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/pagination.js"></script>
+	<script type="text/javascript" src="vendors/materialize/js/materialize.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="vendors/fullPage/js/jquery.fullPage.js"></script>
+</body>
+</html>

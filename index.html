@@ -13,7 +13,6 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Roboto" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="vendors/fullPage/css/jquery.fullPage.css"/>
 </head>
 <body>
 	<header>
@@ -29,7 +28,6 @@
 				        <li><a class="enlaceMenu" href="#section_four">Normativa</a></li>
 				        <li><a class="enlaceMenu" href="#section_five">Comentarios</a></li>
 				        <li><a class="enlaceMenu" href="#section_six">Preguntas</a></li>
-				        <li><a class="enlaceMenu" href="#section_seven">Galeria</a></li>
 	                </ul>
 	            </div>
 	        </nav>
@@ -42,47 +40,55 @@
 	        <li><a href="#section_four">Normativa</a></li>
 	        <li><a href="#section_five">Comentarios</a></li>
 	        <li><a href="#section_six">Preguntas</a></li>
-	        <li><a href="#section_seven">Galeria</a></li>
 	    </ul>
 	</header>
 	<section class="content_slider" id="section_one">
-		<div class="carousel carousel-slider center" data-indicators="true" id="sliderCarrusel">
-		    <div class="carousel-fixed-item" id="contentLogoCitas">
-		    	<div class="row">
-		    		<div class="col s12 m12">
-		    			<img class="logo_citas" src="img/registroHistorias_logo.png">
-		    		</div>
-		    	</div>		      
-		    </div>
-		    <div class="carousel-item img-doctor-one sliderSize" href="#one!">
-		    </div>
-		    <div class="carousel-item img-doctor-two sliderSize" href="#two!">		      
-		    </div>
-		    <div class="carousel-item img-doctor-three sliderSize" href="#two!">		      
-		    </div>
+		<div class="slider fullscreen">
+		    <ul class="slides">
+		      <li>
+		        <img src="img/doctor_examenes.png" id="slider_uno">
+		        <div class="caption left-align sliderTop">
+		        	<p class="t1"> Registro Nacional de</p>
+		         	<p class="t2">Historias Clínicas</p>
+		         	<p class="t3">Electrónicas</p>
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/doctor_paciente.png">
+		        <div class="caption left-align sliderTop">
+		          	<p class="t1"> Registro Nacional de</p>
+		         	<p class="t2">Historias Clínicas</p>
+		         	<p class="t3">Electrónicas</p>
+		        </div>
+		      </li>
+		      <li>
+		        <img src="img/doctors_talking.png" id="slider_tres"> <!-- random image -->
+		        <div class="caption left-align sliderTop">
+		          	<p class="t1"> Registro Nacional de</p>
+		         	<p class="t2">Historias Clínicas</p>
+		         	<p class="t3">Electrónicas</p>
+		        </div>
+		      </li>
+		    </ul>
 		</div>
 	</section>
 	<section class="que_es" id="section_two">
 		<div class="container">
 			<div class="row">
-				<div class="col s12 m12 l6 xl6">
-					<!-- <div class="contenTitulo center">
-						<span class="tittle">¿QUÉ ES?</span>
-						<hr class="lineaColor"></hr>
-					</div> -->
+				<div class="col s12 m12 l12 xl6">
 					<div class="contenTitulo titulObjetivos">
 						<span class="tittle">¿QUÉ ES?</span>
 						<div>
 							<div class="lineaColor-objetivos"></div>
 						</div>
 					</div>
-					<div class="texto_quees">
-						<p class="fs17">El Registro Nacional de Historias Clínicas Electrónicas es la infraestructura tecnológica especializada en salud que administra las historias clínicas electrónicas dentro de los términos estrictamente necesarios para garantizar la seguridad y la calidad de la atención a los pacientes.</p>
-						<p class="fs17">Serán ellos o sus representantes legales, quienes autoricen a los profesionales de la salud a acceder a la información contenida en
+					<div class="texto_quees fs17">
+						<p>El Registro Nacional de Historias Clínicas Electrónicas es la infraestructura tecnológica especializada en salud que administra las historias clínicas electrónicas dentro de los términos estrictamente necesarios para garantizar la seguridad y la calidad de la atención a los pacientes.</p>
+						<p>Serán ellos o sus representantes legales, quienes autoricen a los profesionales de la salud a acceder a la información contenida en
 						sus archivos. Se podrá aplicar en los servicios médicos de apoyo públicos, privados o mixtos, en el ámbito de la Ley 26842, Ley General
 						de Salud.</p>
-						<p class="fs17">El Registro Nacional de Historias Clínicas Electrónicas contiene una base de datos de filiación de cada persona con la relación de los establecimientos de salud y de los servicios médicos de apoyo que le han brindado atención y de esta manera generaron su historia clínica electrónica.</p>
-						<p class="fs17">El Ministerio de Salud es el titular de la base de datos contenida en el Registro Nacional de Historias Clínicas Electrónicas y está
+						<p>El Registro Nacional de Historias Clínicas Electrónicas contiene una base de datos de filiación de cada persona con la relación de los establecimientos de salud y de los servicios médicos de apoyo que le han brindado atención y de esta manera generaron su historia clínica electrónica.</p>
+						<p>El Ministerio de Salud es el titular de la base de datos contenida en el Registro Nacional de Historias Clínicas Electrónicas y está
 						encargado de su administración. Además, emite las normas complementarias para el establecimiento de los procedimientos técnicos
 						y administrativos necesarios para su implementación y sostenibilidad.</p>
 					</div>
@@ -90,9 +96,10 @@
 						<button class="buttonPresentacion"><a href="../ppt/presentacion_2014.pptx" download="presentacion_2014"></a>Ver Presentación</button>
 					</div>
 				</div>
-				<div class="col s12 m12 l6 xl6 colVideo">
+				<div class="col s12 m12 l12 xl6 colVideo">
 					<div class="contentVideo video-container">
-						<iframe width="100%" height="315" src="https://www.youtube.com/embed/85MppyLJHz0"  allowfullscreen></iframe>
+						<iframe width="100%" height="315" src="https://www.youtube.com/watch?v=CI-dQiaDsJo"  allowfullscreen></iframe>
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/CI-dQiaDsJo" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
@@ -101,46 +108,46 @@
 	<section class="objetivos" id="section_two_two">
 		<div class="container-fluid">
 			<div class="row mb0">
-				<div class="col s12 md l6" id="imgDoctorObjetivos"></div>
-				<div class="col s12 md6 l6" id="inf_objetivos">
+				<div class="col s12 md12 l6" id="imgDoctorObjetivos"></div>
+				<div class="col s12 md12 l6" id="inf_objetivos">
 					<div class="contenTitulo titulObjetivos">
 						<span class="tittle">OBJETIVOS</span>
 						<div>
 							<div class="lineaColor-objetivos"></div>
 						</div>
 					</div>
-					<div class="textObjetivos">
-						<p class="fs17">
+					<div class="textObjetivos fs17">
+						<p>
 							El Registro Nacional de Historias Clínicas Electrónicas
 							tiene los siguientes objetivos:
 						</p>
 						<ul>
-							<li class="fs17"><b>1.</b> Organizar y mantener el registro de las historias clínicas
+							<li><b>1.</b> Organizar y mantener el registro de las historias clínicas
 							electrónicas.</li>
 							<br>
-							<li class="fs17"><b>2.</b> Estandarizar los datos y la información clínica de las
+							<li><b>2.</b> Estandarizar los datos y la información clínica de las
 							historias clínicas electrónicas, así como las características
 							y funcionalidades de los sistemas de información de
 							historias clínicas electrónicas, para lograr la interoperabilidad
 							en el sector salud.</li>
 							<br>
-							<li class="fs17"><b>3.</b> Asegurar la disponibilidad de la información clínica
+							<li><b>3.</b> Asegurar la disponibilidad de la información clínica
 							contenida en las historias clínicas electrónicas para el
 							paciente o su representante legal y para los profesionales
 							de salud autorizados en el ámbito estricto de la atención
 							de salud al paciente.</li>
 							<br>
-							<li class="fs17"><b>4.</b> Asegurar la continuidad de la atención de salud al
+							<li><b>4.</b> Asegurar la continuidad de la atención de salud al
 							paciente en los establecimientos de salud y en los servicios
 							médicos de apoyo, mediante el intercambio de información
 							clínica que aquel o su representante legal soliciten,
 							compartan o autoricen.</li>
 							<br>
-							<li class="fs17"><b>5.</b> Brindar información al Sistema Nacional de Salud para
+							<li><b>5.</b> Brindar información al Sistema Nacional de Salud para
 							el diseño y aplicación de políticas públicas que permitan
 							el ejercicio efectivo del derecho a la salud de las personas.</li>
 							<br>
-							<li class="fs17"><b>6.</b> y demás que se establecerán en su Reglamento.</li>
+							<li><b>6.</b> y demás que se establecerán en su Reglamento.</li>
 						</ul>
 					</div>
 				</div>
@@ -154,7 +161,7 @@
 				<hr class="lineaWhite"></hr>
 			</div>
 			<div class="row">
-			    <div class="col s12 m6 l6">
+			    <div class="col s12 m4 l4">
 			    	<div class="card content_infoCard">
 			        	<div class="card-image">
 			          <img src="img/medico_paciente.jpg">
@@ -178,7 +185,7 @@
 			        	</div>
 			      	</div>
 			    </div>
-			    <div class="col s12 m6 l6">
+			    <div class="col s12 m4 l4">
 			    	<div class="card content_infoCard">
 			        	<div class="card-image">
 			          <img src="img/consultorio_doctor.jpg">
@@ -202,10 +209,37 @@
 			        	</div>
 			      	</div>
 			    </div>
+			    <div class="col s12 m4 l4">
+			    	<div class="card content_infoCard">
+			        	<div class="card-image">
+			          <img src="img/medico_paciente.jpg">
+			          <a class="btn-floating btn-large halfway-fab waves-effect waves-light red "><span><strong>22/02</strong></span></a>
+			        	</div>
+			        	<div class="card-content">
+			        		<div class="infEvento">
+			        			<span class="card-title">Historia Clínica Electrónica e Interoperabilidad en el Sector Salud</span>
+			          			<p>23 y 24 de febrero 2015</p>
+			          			<p>Hashtag del evento: #HCE_MINSA </p>
+			          			<div class="icon_social">
+		          					<div class="row">
+		          						<div class="col l2 m2 s2"><img class="responsive-img" src="img/facebook_color.svg"></div>
+		          						<div class="col l2 m2 s2"><img class="responsive-img" src="img/twitter_color.svg"></div>
+		          					</div>
+			          			</div>
+			        		</div>
+			          		<div class="card-action">
+					         	<a href="eventos_uno.html" class="botonVermas"><span class="textWhite">Ver más</span></a>
+					        </div>
+			        	</div>
+			      	</div>
+			    </div>
+			</div>
+			<div class="center-align">
+				<button class="verMasEventos btn"><a href="eventos.html">VER MÁS EVENTOS</a></button>
 			</div>
 		</div>
 	</section>
-	<section class="normativas" id="section_four">
+	<section class="normativas fs17" id="section_four">
 		<div class="contenTitulo center">
 			<span class="tittle">NORMATIVA</span>
 			<hr class="lineaColor"></hr>
@@ -406,15 +440,15 @@
 			</div>
 			<div class="row">
 				<div class="col l6 m6 s12 x12">
-					<button class="#ffffff white buttonComentarios waves-effect waves-light btn">Limpiar</button>
+					<button class="white buttonComentarios waves-effect waves-light btn">Limpiar</button>
 				</div>
 				<div class="col l6 m6 s12 x12 right-align">
-					<button class="#ffffff white buttonComentarios waves-effect waves-light btn">Enviar</button>
+					<button class="white buttonComentarios waves-effect waves-light btn">Enviar</button>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="contentPreguntas" id="section_six">
+	<section class="contentPreguntas fs17" id="section_six">
 		<div class="container">
 			<div class="contenTitulo center">
 				<span class="tittle">
@@ -463,32 +497,6 @@
 				      </span></div>
 				    </li>
 				</ul>
-			</div>
-		</div>
-	</section>
-	<section class="contentGaleria" id="section_seven">
-		<div class="container">
-			<div class="contenTitulo center">
-				<span class="tittle">
-					GALERIA
-				</span>
-				<hr class="lineaColor"></hr>
-			</div>
-			<div class="row">
-				<div class="col s6 m6 l2 xl2 mb5"><img class="materialboxed responsive-img imgShadow" width="500" src="img/historia_paciente.png"></div>
-				<div class="col s6 m6 l2 xl2 mb5"><img class="materialboxed responsive-img imgShadow" width="500" src="img/doctor_computer.png"></div>
-				<div class="col s6 m6 l2 xl2 mb5"><img class="materialboxed responsive-img imgShadow" width="500" src="img/historia_paciente.png"></div>
-				<div class="col s6 m6 l2 xl2 mb5"><img class="materialboxed responsive-img imgShadow" width="500" src="img/doctor_computer.png"></div>
-				<div class="col s6 m6 l2 xl2"><img class="materialboxed responsive-img imgShadow" width="500" src="img/historia_paciente.png"></div>
-				<div class="col s6 m6 l2 xl2"><img class="materialboxed responsive-img imgShadow" width="500" src="img/doctor_computer.png"></div>
-			</div>
-			<div class="row">
-				<div class="col s6 m6 l2 xl2 mb5"><img class="materialboxed responsive-img imgShadow" width="500" src="img/doctor_computer.png"></div>
-				<div class="col s6 m6 l2 xl2 mb5"><img class="materialboxed responsive-img imgShadow" width="500" src="img/historia_paciente.png"></div>
-				<div class="col s6 m6 l2 xl2 mb5"><img class="materialboxed responsive-img imgShadow" width="500" src="img/doctor_computer.png"></div>
-				<div class="col s6 m6 l2 xl2 mb5"><img class="materialboxed responsive-img imgShadow" width="500" src="img/historia_paciente.png"></div>
-				<div class="col s6 m6 l2 xl2 mb5"><img class="materialboxed responsive-img imgShadow" width="500" src="img/doctor_computer.png"></div>
-				<div class="col s6 m6 l2 xl2 mb5"><img class="materialboxed responsive-img imgShadow" width="500" src="img/historia_paciente.png"></div>
 			</div>
 		</div>
 	</section>
