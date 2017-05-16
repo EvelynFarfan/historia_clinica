@@ -350,6 +350,8 @@ footer{
 }
 /*- - - - - - - - - - - footer- - - - - - - - - - -*/
 
+
+/*- - - - - - - - - - - Media Queries - - - - - - - - - - -*/
 @media(min-width: 1900px) and (max-width: 770px){
 	.contenTitulo {
     	margin-bottom: 10%;
@@ -549,6 +551,11 @@ footer{
 	}
 	.shadowLeft{
 		box-shadow: 0 0 0 transparent;
+	}
+	.card .cardEventoUno {
+	    color: black;
+	    font-family: 'Montserrat', sans-serif;
+	    overflow-y: scroll;
 	}
 }
 @media only screen and (max-height: 700px){
