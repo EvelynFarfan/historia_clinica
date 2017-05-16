@@ -5,13 +5,11 @@ $(document).ready(function(){
 	$('.slider').slider();
 	$(".button-collapse").sideNav();
 	$('.collapsible').collapsible();
-
+	$('.modal').modal();
+	$('select').material_select();
 	if ($(window).width()< 1230){
    		$(".imagen_logoMinsa").attr("src","img/logo_minsa.jpg");
    	}  
-   	if($("div").hasClass(".seleccionado")){
-
-   	};
 	$(window).scroll(function() { 
 		if ($(document).scrollTop() > 50) { 
 			$("#menu_navbar").css("height", "65px");
@@ -37,9 +35,7 @@ $(document).ready(function(){
 				$(".imagen_logoMinsa")	.css("padding", "12% 0");
 			} 
    		}
-
 	});
-
 	$('a[href*="#"]:not([href="#"])').click(function() {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 			var target = $(this.hash);
@@ -52,13 +48,11 @@ $(document).ready(function(){
 			}
 		}
 	});
-	
    	$('.carousel.carousel-slider').carousel({fullWidth: true});
 // -------------------------- Media Queries ---------------------
-
 	$(window).resize(function(){
     	if ($(window).width() <= 770){
 			$(".imagen_logoMinsa").attr("src","img/logo_minsa.jpg");
 		}	
-   	});     
+   	});
 });

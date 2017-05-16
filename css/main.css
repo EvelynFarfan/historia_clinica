@@ -12,9 +12,6 @@
 .mb10{
 	margin-bottom: 10%
 }
-.mb5{
-	margin-bottom: 5%;
-}
 .fs17{
 	font-size: 17px;
 }
@@ -50,7 +47,7 @@ nav a.button-collapse{
 .slider .indicators .indicator-item.active {
     background-color: #336699 !important;
 }
-#section_two, #section_seven{
+#section_two{
 	background-color: #f8f9fb;
 }
 #section_two{
@@ -60,9 +57,6 @@ nav a.button-collapse{
 #section_six{
 	padding: 15% 0;
 }
-#section_seven {
-    padding: 8% 0 8% 0;
-}
 .colVideo{
 	padding: 8% 0 0 5% !important;
 }
@@ -71,24 +65,6 @@ nav a.button-collapse{
 }
 .contenTitulo{
 	margin-bottom: 5%;
-}
-.logo{
-	width:30%;
-	margin-top: 4.5%;
-}
-.sliderSize{
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.img-doctor-one{
-	background-image: url(../img/doctor_paciente.jpg);
-}
-.img-doctor-two{
-	background-image: url(../img/img_slider_2.jpg);
-}
-.img-doctor-three{
-	background-image: url(../img/doctor_historia.jpg);
 }
 .t1{
 	font-size: 60px;
@@ -110,11 +86,6 @@ nav a.button-collapse{
 }
 .sliderTop{
 	margin-top: 25%;
-}
-#contentLogoCitas{
-	top: 60%;
-    left: 5%;
-    right: 100%;
 }
 .buttonPresentacion{
 	background-color: #336699;
@@ -168,51 +139,14 @@ nav a.button-collapse{
 	color: #626262;
 }
 /*- - - - - - - - - - - - eventos individual - - - - - - - - -  - */
-#eventoHome{
-	width: 100%;
-    padding: 5%;
-    background: #fff;
-}
 .content_infoCard{
 	width: 80%;
 	margin: 5px 0 0 10%;
-}
-.estilo{
-	color: #fff!important;
-	font-family: 'Montserrat', sans-serif;
-}
-.estiloHome{
-	color: #3e3a48!important;
-    font-family: 'Montserrat', sans-serif;
 }
 .eventoLink{
 	padding: 4%;
 	border:2px solid #fff!important;
 	color: #fff!important;
-}
-.eventoLinkHome{
-	padding: 4%;
-	border:2px solid #336699!important;
-	color: #336699!important;
-}
-.eventoLink:hover{
-	background-color: #fff;
-	color: #336699!important;
-}
-.eventoLinkHome:hover{
-	background-color: #336699;
-	color: #fff!important;
-}
-.eventoLink2{
-	width: 60%;
-	margin-left: 18%;
-}
-.eventoLink2 p{
-	padding: 2%;
-}
-#evento{
-    width: 100%;
-    padding: 5%;
 }
 .card .cardContenedor{
 	height: 17rem;
@@ -325,7 +259,6 @@ footer{
 	background-color: #fff;
     color: #336699;
     font-weight: bold;
-    width: 25%;
     margin-top: 6%;
 }
 .verMasEventos:hover, .verMasEventos:focus{
@@ -381,6 +314,38 @@ footer{
 }
 .ponencias{
 	background-color: #f2f2f2;
+}
+.buttonRegistro{
+	width: 100%;
+    background-color: #336699;
+    border: none;
+    color: #fff;
+    padding: 1% 10%;
+    border-radius: 5px;
+    margin-top: 3%;
+    text-transform: uppercase;
+}
+.buttonRegistro:focus{
+	background-color: #336699;
+}
+.buttonModal{
+	background-color: #336699;
+    color: #fff;
+    margin-right: 2% !important;
+}
+.buttonModal:hover, .buttonModal:focus, .buttonModal:active{
+	background-color: #336699;
+}
+.formRegistro{
+	width: 90%;
+    margin: 0 auto;
+}
+#cabeceraModal{
+	background-color: #336699;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0% 5%;
+    font-size: 20px;
 }
 /*- - - - - - - - - - - footer- - - - - - - - - - -*/
 
@@ -445,13 +410,20 @@ footer{
 		margin-top: 5%;
 	}
 }
-@media screen and (max-width: 1366px) and (max-height: 768px) {	
+@media screen and (max-width: 1366px) and (max-height: 800px) {	
 	#section_two {
 	    margin-top: -5%;
 	}
 	#imgDoctorObjetivos {
 	    height: 0; 
 	    padding-bottom: 65%;
+	}
+	.colVideo {
+    	padding: 16% 0 0 5% !important;
+	}
+	.content_infoCard {
+	    width: 100%; 
+	    margin:0 0 5% 0; 
 	}
 }
 @media screen and (max-width: 1024px) and (max-height: 768px) {
@@ -578,7 +550,6 @@ footer{
 		box-shadow: 0 0 0 transparent;
 	}
 }
-
 @media only screen and (max-height: 700px){
 	.t1{
 		font-size: 40px;
@@ -603,5 +574,11 @@ footer{
 	}
 	.shadowLeft{
 		box-shadow: 0 0 0 transparent;
+	}
+}
+@media only screen and (max-height: 1000px){
+	.content_infoCard {
+	    width: 100%; 
+	    margin: 10% 0 5% 0;
 	}
 }
