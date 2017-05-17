@@ -38,7 +38,7 @@ ul a.enlaceMenu:hover{
 nav a.button-collapse{
 	color: #000;
 }
-#section_one{
+#inicio{
 	height: 100vh;
 }
 .slider .indicators .indicator-item {
@@ -47,14 +47,12 @@ nav a.button-collapse{
 .slider .indicators .indicator-item.active {
     background-color: #336699 !important;
 }
-#section_two{
+#que_es{
 	background-color: #f8f9fb;
-}
-#section_two{
 	padding: 8% 0 6% 0;
 	margin-top: -4%;
 }
-#section_six{
+#preguntas{
 	padding: 15% 0;
 }
 .colVideo{
@@ -232,7 +230,7 @@ footer{
 	background-color: #336699;
 }
 /*- - - - - - - - - - - eventos - home- - - - - - - - - - -*/
-#section_three{
+#eventos{
 	padding: 9% 0;
 }
 .contentEvento{
@@ -359,16 +357,16 @@ footer{
 	.img-doctor-two{
 		background-image: url(../img/paciente_doctor.jpg);
 	}
-	#section_one{
+	#inicio{
 		height: inherit;
 	}
-	#section_two, #section_two_two, #section_three,#section_four, #section_five, #section_six{
+	#que_es, #objetivos, #eventos,#normativa, #comentarios, #preguntas{
 		height: initial;
 	}
-	#section_two, #section_three, #section_five, #section_six{
+	#que_es, #eventos, #comentarios, #preguntas{
 		padding: 10% 0;
 	}
-	#section_two_two{
+	#objetivos{
 		padding-bottom: 10%;
 	}
 	.que_es, .eventos, .normativas, .comentarios, .contentPreguntas{
@@ -400,7 +398,7 @@ footer{
 	.contButtonPresentacion{
 		text-align: center;
 	}
-	#section_six{
+	#preguntas{
 		text-align: justify;
 	}
 	.buttonComentarios{

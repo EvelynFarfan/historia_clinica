@@ -21,28 +21,28 @@
 	            <div class="nav-wrapper"> <a href="#!" class="brand-logo"><img class="imagen_logoMinsa" src="img/minsa_logo.png"></a>
 	                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 	                <ul class="right hide-on-med-and-down">
-	                    <li><a class="enlaceMenu" href="#section_one">Inicio</a></li>
-				        <li><a class="enlaceMenu" href="#section_two">¿Qué es?</a></li>
-				        <li><a class="enlaceMenu" href="#section_two_two">Objetivos</a></li>
-				        <li><a class="enlaceMenu" href="#section_three">Eventos</a></li>
-				        <li><a class="enlaceMenu" href="#section_four">Normativa</a></li>
-				        <li><a class="enlaceMenu" href="#section_five">Comentarios</a></li>
-				        <li><a class="enlaceMenu" href="#section_six">Preguntas</a></li>
+	                    <li><a class="enlaceMenu" href="#inicio">Inicio</a></li>
+				        <li><a class="enlaceMenu" href="#que_es">¿Qué es?</a></li>
+				        <li><a class="enlaceMenu" href="#objetivos">Objetivos</a></li>
+				        <li><a class="enlaceMenu" href="#eventos">Eventos</a></li>
+				        <li><a class="enlaceMenu" href="#normativa">Normativa</a></li>
+				        <li><a class="enlaceMenu" href="#comentarios">Comentarios</a></li>
+				        <li><a class="enlaceMenu" href="#preguntas">Preguntas</a></li>
 	                </ul>
 	            </div>
 	        </nav>
 	    </div>
 	    <ul class="side-nav" id="mobile-demo">
-	        <li><a href="#section_one">Inicio</a></li>
-	        <li><a href="#section_two">¿Qué es?</a></li>
-	        <li><a href="#section_two_two">Objetivos</a></li>
-	        <li><a href="#section_three">Eventos</a></li>
-	        <li><a href="#section_four">Normativa</a></li>
-	        <li><a href="#section_five">Comentarios</a></li>
-	        <li><a href="#section_six">Preguntas</a></li>
+	        <li><a href="#inicio">Inicio</a></li>
+	        <li><a href="#que_es">¿Qué es?</a></li>
+	        <li><a href="#objetivos">Objetivos</a></li>
+	        <li><a href="#eventos">Eventos</a></li>
+	        <li><a href="#normativa">Normativa</a></li>
+	        <li><a href="#comentarios">Comentarios</a></li>
+	        <li><a href="#preguntas">Preguntas</a></li>
 	    </ul>
 	</header>
-	<section class="content_slider" id="section_one">
+	<section class="content_slider" id="inicio">
 		<div class="slider fullscreen">
 		    <ul class="slides">
 		      <li>
@@ -72,7 +72,7 @@
 		    </ul>
 		</div>
 	</section>
-	<section class="que_es" id="section_two">
+	<section class="que_es" id="que_es">
 		<div class="container">
 			<div class="row">
 				<div class="col s12 m12 l12 xl6">
@@ -104,7 +104,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="objetivos" id="section_two_two">
+	<section class="objetivos" id="objetivos">
 		<div class="container-fluid">
 			<div class="row mb0">
 				<div class="col s12 md12 l6" id="imgDoctorObjetivos"></div>
@@ -153,7 +153,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="colorBackground eventos" id="section_three">
+	<section class="colorBackground eventos" id="eventos">
 		<div class="container">
 			<div class="contenTitulo center">
 				<span class="tittle textWhite">EVENTOS</span>
@@ -232,7 +232,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="normativas fs17" id="section_four">
+	<section class="normativas fs17" id="normativa">
 		<div class="contenTitulo center">
 			<span class="tittle">NORMATIVA</span>
 			<hr class="lineaColor"></hr>
@@ -392,43 +392,57 @@
 			</ul>
 		</div>
 	</section>
-	<section class="colorBackground comentarios" id="section_five">
+	<section class="colorBackground comentarios" id="comentarios">
 		<div class="contenTitulo center">
 			<span class="tittle textWhite">COMENTARIOS</span>
 			<hr class="lineaWhite"></hr>
 		</div>
 		<div class="container">
 			<div class="row">
-			    <form class="col s12 l12 m12">
+			    <form class="col s12 l6 m6">
+			    	<div class="row">
+			    		<div class="input-field col s12">
+			        		<input id="DNI" type="text" class="validate borderWhite">
+			        		<label for="email" class="textWhite">Nombre *</label>
+			    		</div>
+			    	</div>
+			    	<div class="row">
+			    		<div class="input-field col s12">
+			        		<input id="DNI" type="text" class="validate borderWhite">
+			        		<label for="email" class="textWhite">Apellido *</label>
+			    		</div>
+			    	</div>
 			    	<div class="row">
 			        	<div class="input-field col s12">
-			        		<input id="DNI" type="text" class="validate borderWhite">
+			        		<input id="DNI" type="number" class="validate borderWhite">
 			        		<label for="email" class="textWhite">DNI *</label>
 			    		</div>
 			    	</div>
-				    <div class="row">
-				    	<div class="input-field col s12">
-				          <input id="email" type="email" class="validate borderWhite">
-				          <label for="email" class="textWhite">Email *</label>
-				    	</div>
-				    </div>
-			     	<div class="row">
-			    		<div class="input-field col s12">
-					        <input id="icon_telephone" type="text" class="validate borderWhite">
-					        <label for="icon_telephone" class="textWhite">Telephone</label>
-			    		</div>
-			    	</div>
-				    <div class="row">
-				    	<div class="input-field col s12">
-				          <textarea id="textarea1" class="materialize-textarea borderWhite"></textarea>
-				          <label for="textarea1" class="textWhite">Comentario *</label>
-				    	</div>
-				    </div>
 				    <div class="row">
 				    	<div class="col s12">
 				    		<span class="textWhite">Los Campos con (*) son obligatorios.</span>
 				    	</div>
 					</div>
+			    </form>
+			    <form class="col s12 l6 m6">
+			    	<div class="row">
+				    	<div class="input-field col s12">
+				    		<input id="email" type="email" class="validate borderWhite">
+          					<label for="email" data-error="wrong" data-success="right" class="textWhite">Email</label>
+				    	</div>
+				    </div>
+			     	<div class="row">
+			    		<div class="input-field col s12">
+					        <input id="icon_telephone" type="number" class="validate borderWhite">
+					        <label for="icon_telephone" class="textWhite">Teléfono</label>
+			    		</div>
+			    	</div>
+			        <div class="row">
+			          <div class="input-field col s12">
+			            <textarea id="textarea1" class="materialize-textarea borderWhite" data-length="120"></textarea>
+			            <label for="textarea1" class="textWhite">Textarea</label>
+			          </div>
+			        </div>
 			    </form>
 			</div>
 			<div class="row">
@@ -441,7 +455,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="contentPreguntas fs17" id="section_six">
+	<section class="contentPreguntas fs17" id="preguntas">
 		<div class="container">
 			<div class="contenTitulo center">
 				<span class="tittle">
