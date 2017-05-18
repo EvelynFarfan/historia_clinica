@@ -105,7 +105,7 @@ nav a.button-collapse{
 	height: 100vh;
 	padding: 0 0 52% 0;
     background-size: cover;
-    background-image: url(../img/senior-doctor.jpg);
+    background-image: url(../img/senior-doctor.jpeg);
     padding-left: 0;
 }
 .texto_quees{
@@ -274,6 +274,13 @@ footer{
 .boxListaEventos:hover, .boxListaCategorias:hover	{
     background-color: #f2f2f2;
 }
+.seleccionado:hover{
+    background-color: #336699;
+    color: #fff;
+}
+.seleccionado:hover .circuloMenuEventos{
+	background-color: #dcddde !important;
+}
 .boxListaEventos:hover .circuloMenuEventos, .boxListaCategorias:hover .circuloMenuEventos{
 	background-color: #336699;
 }
@@ -282,7 +289,7 @@ footer{
 }
 .seleccionado a div .textGray{
 	color: #fff;
-}
+}sc
 .circuloMenuEventos{
 	display: inline-block;
     min-width: 10px;				
@@ -550,11 +557,7 @@ footer{
 	.shadowLeft{
 		box-shadow: 0 0 0 transparent;
 	}
-	.card .cardEventoUno {
-	    color: black;
-	    font-family: 'Montserrat', sans-serif;
-	    overflow-y: scroll;
-	}
+	
 }
 @media only screen and (max-height: 700px){
 	.t1{
@@ -586,5 +589,12 @@ footer{
 	.content_infoCard {
 	    width: 100%; 
 	    margin: 10% 0 5% 0;
+	}
+}
+@media only screen and (max-width: 1600px){
+	.card .cardEventoUno {
+	    color: black;
+	    font-family: 'Montserrat', sans-serif;
+	    overflow-y: scroll;
 	}
 }
