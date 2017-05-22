@@ -9,6 +9,9 @@
 .mb0{
 	margin-bottom: 0;
 }
+.mr0{
+	margin-right: 0 !important;
+}
 .mb10{
 	margin-bottom: 10%
 }
@@ -289,7 +292,7 @@ footer{
 }
 .seleccionado a div .textGray{
 	color: #fff;
-}sc
+}
 .circuloMenuEventos{
 	display: inline-block;
     min-width: 10px;				
@@ -352,6 +355,15 @@ footer{
     text-transform: uppercase;
     padding: 0% 5%;
     font-size: 20px;
+}
+textarea.materialize-textarea {
+    overflow-y: hidden;
+    padding: .8rem 0 5.9rem 0 !important;
+    resize: none;
+    min-height: 3rem;
+}
+.contenedorInput{
+	width: 90%;
 }
 /*- - - - - - - - - - - Media Queries - - - - - - - - - - -*/
 @media(min-width: 1900px) and (max-width: 770px){
@@ -470,7 +482,7 @@ footer{
 	    margin: 0 0 5% 0;
 	}
 }
-@media screen and (max-width: 320px){	
+@media screen and (max-width: 320px){
 	#imgDoctorObjetivos {
 	    background-position-y: -100px;
 	}
@@ -492,69 +504,7 @@ footer{
 	.content_infoCard {
 	    width: 100%;
 	    margin: 3% 0 3% 0;
-	}_z
-}
-@media only screen and (max-width: 1200px){
-	#section_two {
-	    margin-top: -20%;
-	    padding: 15% 0 10% 0;
 	}
-	.buttonPresentacion {
-    	margin: 0 auto;
-	}
-	.titulObjetivos{
-		text-align: center;
-	}
-	.titulObjetivos{
-		text-align: center;
-	}
-	.lineaColor-objetivos {
-	    display: inline-block;
-	}
-	.colVideo {
-		height: initial;
-	    padding: 5% 0 0 0% !important;
-	}
-	.content_infoCard {
-	    width: 100%;
-	    margin: 10% 0 5% 0;
-	}
-	#imgDoctorObjetivos{
-		background-size: cover;
-    	background-position-y: 0px;
-	}
-	.contentVideo{
-		height: 315px;
-	}
-	.textObjetivos {
-	    width: 95%;
-	    padding: 0 0 10% 0;
-	}
-	.imagen_logoMinsa{
-		width: 135px;
-	}
-	.t1{
-		font-size: 45px
-	}
-	.t2{
-		font-size: 35px;
-	}
-	.t3{
-		font-size: 25px;
-	}
-	.sliderTop{
-		margin-top: 50%;
-	}
-	.slider .slides li img #slider_uno{
-		background-position-x: 67% !important;
-	}
-	.slider .slides li img #slider_tres{
-		background-position-x: 67% !important;
-	}
-	.shadowLeft{
-		box-shadow: 0 0 0 transparent;
-	}
-	
 }
 @media only screen and (max-height: 700px){
 	.t1{
@@ -589,9 +539,20 @@ footer{
 	}
 }
 @media only screen and (max-width: 1600px){
-	.card .cardEventoUno {
+	.card .cardContenedor {
 	    color: black;
 	    font-family: 'Montserrat', sans-serif;
 	    overflow-y: scroll;
+	}
+	.card .cardContenedor::-webkit-scrollbar-track{
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		background-color: #F5F5F5;
+	}
+	.card .cardContenedor::-webkit-scrollbar{
+		width: 6px;
+		background-color: #F5F5F5;
+	}
+	.card .cardContenedor::-webkit-scrollbar-thumb{
+		background-color: #a1a0a0	;
 	}
 }
