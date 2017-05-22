@@ -475,11 +475,14 @@ textarea.materialize-textarea {
 	#imgDoctorObjetivos {
 	    height: 0;
 	    padding: 0 0 70% 0;
-	    background-position-y: -129px;
+	    background-position-y: -60px;
 	}
 	.content_infoCard {
 	    width: 100%;
 	    margin: 0 0 5% 0;
+	}
+	#que_es{
+		margin-top: -14%;
 	}
 }
 @media screen and (max-width: 320px){
@@ -554,5 +557,25 @@ textarea.materialize-textarea {
 	}
 	.card .cardContenedor::-webkit-scrollbar-thumb{
 		background-color: #a1a0a0	;
+	}
+}
+@media only screen and (max-width: 1400px){
+	#que_es{
+		margin-top: -10%;
+	}
+	#imgDoctorObjetivos {
+	    padding: 0 0 71% 0;
+	}
+}
+@media only screen and (max-width: 1200px){
+	.colVideo {
+	    padding: 8% 0 0 0 !important;
+	}
+}
+@media only screen and (max-width: 992px){
+	.lineaColor-objetivos {
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
 	}
 }
