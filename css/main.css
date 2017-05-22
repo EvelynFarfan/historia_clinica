@@ -458,9 +458,6 @@ textarea.materialize-textarea {
 	.colVideo {
     	padding: 8% 0 0 0 !important;
 	}
-	.titulObjetivos{
-		text-align: center;
-	}
 }
 @media screen and (max-width: 1280px) and (max-height: 800px) {	
 	#imgDoctorObjetivos {
@@ -575,6 +572,14 @@ textarea.materialize-textarea {
 @media only screen and (max-width: 992px){
 	.lineaColor-objetivos {
 	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.contenTitulo{
+		text-align: center;
+	}
+	.buttonPresentacion{
+		display: block;
 	    margin-left: auto;
 	    margin-right: auto;
 	}
