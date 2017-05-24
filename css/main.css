@@ -506,7 +506,7 @@ textarea.materialize-textarea {
 	    margin: 3% 0 3% 0;
 	}
 }
-@media only screen and (max-height: 700px){
+@media only screen and (max-width: : 700px){
 	.t1{
 		font-size: 40px;
 	    font-weight: bold;
@@ -532,7 +532,7 @@ textarea.materialize-textarea {
 		box-shadow: 0 0 0 transparent;
 	}
 }
-@media only screen and (max-height: 1000px){
+@media only screen and (max-width: : 1000px){
 	.content_infoCard {
 	    width: 100%; 
 	    margin: 10% 0 5% 0;
