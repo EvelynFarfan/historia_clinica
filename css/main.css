@@ -139,7 +139,7 @@ nav a.button-collapse{
 /*- - - - - - - - - - - - eventos individual - - - - - - - - -  - */
 .content_infoCard{
 	width: 90%;
-	margin: 5px 0 0 10%;
+	margin: 0 auto;
 }
 .eventoLink{
 	padding: 4%;
