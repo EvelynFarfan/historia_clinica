@@ -90,13 +90,10 @@ nav a.button-collapse{
 }
 .buttonPresentacion{
 	background-color: #336699;
-    border: none;
     color: #fff;
-    padding: 1% 10%;
+    padding: 2% 10%;
     border-radius: 5px;
-    margin-top: 3%;
     text-transform: uppercase;
-    display: flex;
 }
 .que_es, .contentPreguntas{
 	margin:0 auto;
