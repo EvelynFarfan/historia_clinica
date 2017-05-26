@@ -6,6 +6,10 @@
 	background-color: #fff;
 	padding: 30px 50px 0 50px;
 }
+h3{
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: bold;
+}
 .mb0{
 	margin-bottom: 0;
 }
@@ -13,16 +17,19 @@
 	margin-right: 0 !important;
 }
 .mb10{
-	margin-bottom: 10%
+	margin-bottom: 10%;
+}
+.mb5{
+	margin-bottom: 5%;
 }
 .fs17{
 	font-size: 17px;
 }
 .fs13{
-	font-size: 13px
+	font-size: 13px;
 }
 .padding5{
-	padding: 5%;
+	padding: 10% 5% ;
 }
 .paddingLeft{
 	padding-left: 3%
@@ -59,7 +66,7 @@ nav a.button-collapse{
 	padding: 15% 0;
 }
 .colVideo{
-	padding: 10.5% 0 0 5% !important;
+	padding: 8% 0 0 5% !important;
 }
 .que_es, .objetivos{
 	text-align: justify;
@@ -139,6 +146,7 @@ nav a.button-collapse{
 /*- - - - - - - - - - - - eventos individual - - - - - - - - -  - */
 .content_infoCard{
 	width: 90%;
+	height: 530px;
 	margin: 0 auto ;
 }
 .eventoLink{
@@ -231,7 +239,7 @@ footer{
 }
 /*- - - - - - - - - - - eventos - home- - - - - - - - - - -*/
 #eventos{
-	padding: 9% 0;
+	padding: 10% 0;
 }
 .contentEvento{
 	padding: 7% 0 3% 0;
@@ -264,6 +272,13 @@ footer{
 	background-color: #fff;
 }
 /*- - - - - - - - - - - eventos segunda página- - - - - - - - - - -*/
+.contentVideo70{
+	width: 70%;
+	margin: 0 auto;
+}
+.cardInfEvent{
+	height: 250px;
+}
 .calendarEvents{
 	padding: 10% 0;
 }
@@ -361,6 +376,9 @@ textarea.materialize-textarea {
 }
 .contenedorInput{
 	width: 90%;
+}
+.camposOblig{
+	padding-left: 2.5%;
 }
 /*- - - - - - - - - - - Media Queries - - - - - - - - - - -*/
 @media(min-width: 1900px) and (max-width: 770px){
@@ -580,4 +598,21 @@ textarea.materialize-textarea {
 	    margin-left: auto;
 	    margin-right: auto;
 	}
+}
+@media only screen and (max-width: 600px){
+	.camposOblig {
+    	padding-left: 5.5%;
+	}
+	.content_infoCard {
+	    height: auto;
+	    margin: 10% 0;
+	}
+	.shadowLeft {
+	     box-shadow: 0px 0px 0px #dddddd; 
+	}
+	.contentVideo70 {
+	    width: 100%;
+	    margin: 0 auto;
+	}
+
 }
