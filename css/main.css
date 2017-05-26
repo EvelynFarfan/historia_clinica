@@ -615,5 +615,7 @@ textarea.materialize-textarea {
 	    width: 100%;
 	    margin: 0 auto;
 	}
-
+	#que_es {
+	    margin-top: -16%;
+	}
 }
