@@ -630,4 +630,7 @@ textarea.materialize-textarea {
 	.contentVideo {
 	    height: initial;
 	}
+	#imgDoctorObjetivos {
+	    background-position-y: -40px;
+	}
 }
