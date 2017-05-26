@@ -601,6 +601,15 @@ textarea.materialize-textarea {
 	}
 }
 @media only screen and (max-width: 600px){
+	#que_es {
+	    padding: 10% 0 20% 0;
+	}
+	.titulObjetivos {
+	    padding-top: 10%;
+	}
+	.contenTitulo {
+	    margin-bottom: 15%;
+	}
 	.camposOblig {
     	padding-left: 5.5%;
 	}
@@ -617,5 +626,8 @@ textarea.materialize-textarea {
 	}
 	#que_es {
 	    margin-top: -16%;
+	}
+	.contentVideo {
+	    height: initial;
 	}
 }
