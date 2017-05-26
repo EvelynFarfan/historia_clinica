@@ -59,7 +59,7 @@ nav a.button-collapse{
 	padding: 15% 0;
 }
 .colVideo{
-	padding: 8% 0 0 5% !important;
+	padding: 10.5% 0 0 5% !important;
 }
 .que_es, .objetivos{
 	text-align: justify;
@@ -139,7 +139,7 @@ nav a.button-collapse{
 /*- - - - - - - - - - - - eventos individual - - - - - - - - -  - */
 .content_infoCard{
 	width: 90%;
-	margin: 0 auto;
+	margin: 0 auto ;
 }
 .eventoLink{
 	padding: 4%;
