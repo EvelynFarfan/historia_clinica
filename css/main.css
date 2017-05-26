@@ -101,6 +101,7 @@ nav a.button-collapse{
     padding: 2% 10%;
     border-radius: 5px;
     text-transform: uppercase;
+    text-align: center;
 }
 .que_es, .contentPreguntas{
 	margin:0 auto;
