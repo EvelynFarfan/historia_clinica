@@ -387,13 +387,7 @@
 		    </table>
 		</div>
 		<div class="paginacion center">
-			<ul class="pagination">
-			    <li class="waves-effect disabled previous"><a><i class="material-icons">chevron_left</i></a></li>
-			    <li class="waves-effect activado liPagUno"><a id="numUno">1</a></li>
-			    <li class="waves-effect liPagDos"><a id="numDos">2</a></li>
-			    <li class="waves-effect liPagTres"><a id="numTres">3</a></li>
-			    <li class="waves-effect next"><a><i class="material-icons">chevron_right</i></a></li>
-			</ul>
+			<ul id="pagination-demo" class="pagination-sm"></ul>
 		</div>
 	</section>
 	<section class="colorBackground comentarios" id="comentarios">
@@ -402,25 +396,78 @@
 			<hr class="lineaWhite"></hr>
 		</div>
 		<div class="container">
-			<div class="row">
-			    <form class="col s12 l6 m6">
+			<div>
+		        <div class="row">
+		            <form class="formValidate" id="formValidate" method="get" action="">
+		                <div class="row">
+		                	<div class="col l6">
+		                		<div class="input-field col s12">
+			                        <label for="uname" class="textWhite">Nombres y Apellidos*</label>
+			                        <input id="uname" name="uname" type="text" data-error=".errorTxt1" class="borderWhite">
+			                        <div class="errorTxt1"></div>
+			                    </div>
+			                    <div class="input-field col s12">
+			                    	<label for="cdni" class="textWhite">DNI *</label>
+			                    	<input id="cdni" type="number" name="cdni" data-error=".errorTxt5" maxlength="8" class="borderWhite">
+			                    	<div class="errorTxt5"></div>
+			                    </div>
+			                    <div class="input-field col s12">
+			                      <label for="cemail" class="textWhite">E-Mail *</label>
+			                      <input id="cemail" type="email" name="cemail" data-error=".errorTxt2" class="borderWhite">
+			                      <div class="errorTxt2"></div>
+			                    </div>
+		                	</div>
+		                	<div class="col l6">
+		                		<div class="input-field col s12">
+			                      <label for="password" class="textWhite">Teléfono *</label>
+			                      <input id="cphone" type="number" name="cphone" data-error=".errorTxt3" class="borderWhite">
+			                      <div class="errorTxt3"></div>
+			                    </div>
+			                    <div class="input-field col s12">
+			                      <label for="cpassword" class="textWhite">Confirm Password *</label>
+			                      <input id="cpassword" type="password" name="cpassword" data-error=".errorTxt4" class="borderWhite">
+			                      <div class="errorTxt4"></div>
+			                    </div>
+		                	</div> 
+		                    <div class="input-field col s12">
+		                    	<div class="row">
+		                    		<div class="col l6 m6 s12 x12">
+										<div class="contenedorInput center-block">
+											<!-- <button id="botonLimpiar" class="white buttonComentarios waves-effect waves-light btn">Limpiar</button> -->
+											<a><button>hola</button></a>
+										</div>
+									</div>
+		                    		<div class="col s12 m6">
+		                    			<button id="botonEnviarComent" class="btn waves-effect waves-light submit" type="submit" name="action" class="borderWhite">Enviar
+		                          			<i class="mdi-content-send right"></i>
+		                        		</button>
+		                    		</div>
+		                    	</div>
+		                    </div>
+		                </div>
+		            </form>
+		        </div>
+		    </div>
+			<!-- <div class="row">
+
+			    <form class="col s12 l6 m6" id="register">
 			    	<div class="contenedorInput center-block">
 			    		<div class="row">
 					    		<div class="input-field col s12">
-					        		<input id="DNI" type="text" class="validate borderWhite">
+					        		<input id="nane" name="name" type="text" class="validate borderWhite">
 					        		<label for="email" class="textWhite">Nombre y Apellido *</label>
 					    		</div>
-					    	</div>
+					    </div>
 					    	<div class="row">
 					    		<div class="input-field col s12">
-					        		<input id="DNI" type="text" class="validate borderWhite">
+					        		<input id="dni" type="number" class="validate borderWhite">
 					        		<label for="email" class="textWhite">DNI*</label>
 					    		</div>
 					    	</div>
 					    	<div class="row">
 					        	<div class="input-field col s12">
-					        		<input id="DNI" type="number" class="validate borderWhite">
-					        		<label for="email" class="textWhite">Email</label>
+					        		<input id="email" type="text" class="validate borderWhite">
+					        		<label for="email" class="textWhite">Email*</label>
 					    		</div>
 					    	</div>
 					    </div>
@@ -429,7 +476,7 @@
 			    	<div class="contenedorInput center-block">
 			    		<div class="row">
 				    		<div class="input-field col s12">
-						        <input id="icon_telephone" type="number" class="validate borderWhite">
+						        <input id="numTelephone" type="number" class="validate borderWhite">
 						        <label for="icon_telephone" class="textWhite">Teléfono</label>
 				    		</div>
 				    	</div>
@@ -455,10 +502,10 @@
 				</div>
 				<div class="col l6 m6 s12 x12 right-align">
 					<div class="contenedorInput center-block">
-						<button class="white buttonComentarios waves-effect waves-light btn">Enviar</button>
+						<button class="white buttonComentarios waves-effect waves-light btn" id="buttonEnviarHome" type="submit">Enviar</button>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<section class="contentPreguntas fs17" id="preguntas">
@@ -517,8 +564,11 @@
 		<p class="textWhite">Ministerio de Salud del Perú © Derechos Reservados 2017</p>
 	</footer>
 	<script type="text/javascript" src="vendors/jquery/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="vendors/jquery_pagination/js/jquery.twbsPagination.min.js"></script>
+	<script type="text/javascript" src="vendors/jquery_validate/js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="vendors/materialize/js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/pagination.js"></script>
+	<script type="text/javascript" src="js/validation.js"></script>
 </body>
 </html>

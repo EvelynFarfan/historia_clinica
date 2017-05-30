@@ -204,8 +204,22 @@ nav a.button-collapse{
 .tableNormativa{
 	margin-bottom: 3%;
 }
-.pagination li.activado {
-    background-color: #336699;
+#pagination-demo{
+  display: inline-block;
+  margin-bottom: 1.75em;
+}
+#pagination-demo li{
+  display: inline-block;
+}
+.page-content{
+  background: #eee;
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+  max-width: 660px;
+}
+.pagination li.active {
+    background-color: #336699 !important;
 }
 /*- - - - - - - - - - - - Preguntas - - - - - -- - -  -*/
 .iconsPreguntas{
@@ -341,7 +355,7 @@ footer{
 	width: 100%;
     background-color: #336699;
     border: none;
-    color: #fff;
+    color: #fff;  
     padding: 1% 10%;
     border-radius: 5px;
     margin-top: 3%;
@@ -380,6 +394,17 @@ textarea.materialize-textarea {
 }
 .camposOblig{
 	padding-left: 2.5%;
+}
+.input-field div.error {
+    position: relative;
+    top: -1rem;
+    left: 0rem;
+    font-size: 0.8rem;
+    color: #96fff5;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
 }
 /*- - - - - - - - - - - Media Queries - - - - - - - - - - -*/
 @media(min-width: 1900px) and (max-width: 770px){

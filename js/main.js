@@ -1,3 +1,65 @@
+// $("#formValidate").validate({
+//     rules: {
+//         uname: {
+//             required: true,
+//             minlength: 5
+//         },
+//         cdni:{
+//             required: true,
+//             maxlength: 8
+//         },
+//         cemail: {
+//             required: true,
+//             email:true
+//         },
+//         password: {
+// 			required: true,
+// 			minlength: 5
+// 		},
+// 		cpassword: {
+// 			required: true,
+// 			minlength: 5,
+// 			equalTo: "#password"
+// 		},
+// 		curl: {
+//             required: true,
+//             url:true
+//         },
+//         crole:"required",
+//         ccomment: {
+// 			required: true,
+// 			minlength: 15
+//         },
+//         cgender:"required",
+// 		cagree:"required",
+//     },
+//     //For custom messages
+//     messages: {
+//         uname:{
+//             required: "Ingrese su nombre completo",
+//             minlength: "Ingrese más de 5 caracteres"
+//         },
+//         cdni:{
+//             required: "Ingrese su DNI",
+//             maxlength: "No ingrese más de 8 caracteres"
+//         },
+//         cemail:{
+//             required: "Ingrese su email",
+//             email: "Ingrese una dirección de email correcta"
+//         },
+//         curl: "Enter your website",
+//     },
+//     errorElement : 'div',
+//     errorPlacement: function(error, element) {
+//       var placement = $(element).data('error');
+//       if (placement) {
+//         $(placement).append(error)
+//       } else {
+//         error.insertAfter(element);
+//       }
+//     }
+// });
+
 $(document).ready(function(){
 
 	$('.materialboxed').materialbox();
@@ -49,6 +111,75 @@ $(document).ready(function(){
 		}
 	});
    	$('.carousel.carousel-slider').carousel({fullWidth: true});
+   	$("#botonEnviarComent").click(function(){
+   		$("#formValidate").validate({
+		    rules: {
+		        uname: {
+		            required: true,
+		            minlength: 5
+		        },
+		        cdni:{
+		            required: true,
+		            maxlength: 8
+		        },
+		        cemail: {
+		            required: true,
+		            email:true
+		        },
+		        password: {
+					required: true,
+					minlength: 5
+				},
+				cpassword: {
+					required: true,
+					minlength: 5,
+					equalTo: "#password"
+				},
+				curl: {
+		            required: true,
+		            url:true
+		        },
+		        crole:"required",
+		        ccomment: {
+					required: true,
+					minlength: 15
+		        },
+		        cgender:"required",
+				cagree:"required",
+		    },
+		    //For custom messages
+		    messages: {
+		        uname:{
+		            required: "Ingrese su nombre completo",
+		            minlength: "Ingrese más de 5 caracteres"
+		        },
+		        cdni:{
+		            required: "Ingrese su DNI",
+		            maxlength: "No ingrese más de 8 caracteres"
+		        },
+		        cemail:{
+		            required: "Ingrese su email",
+		            email: "Ingrese una dirección de email correcta"
+		        },
+		        cphone:{
+		        	required: "Ingrese un número de teléfono",
+		        },
+		        curl: "Enter your website",
+		    },
+		    errorElement : 'div',
+		    errorPlacement: function(error, element) {
+		      var placement = $(element).data('error');
+		      if (placement) {
+		        $(placement).append(error)
+		      } else {
+		        error.insertAfter(element);
+		      }
+		    }
+		});
+   	});
+   	$("#botonLimpiar").click(function(){
+   		$("#formValidate")[0].reset();
+   	});
 // -------------------------- Media Queries ---------------------
 	$(window).resize(function(){
     	if ($(window).width() <= 770){

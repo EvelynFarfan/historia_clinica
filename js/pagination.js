@@ -2,44 +2,61 @@ $(document).ready(function(){
     $("#tabla_dos").css("display", "none");
     $("#tabla_tres").css("display", "none");
     $("#numUno").css("color", "#fff");
-
-    $( "#numDos" ).click(function() {
-        $("#numUno").css("color", "#000");
-        $("#numDos").css("color", "#fff");
-        $("#numTres").css("color", "#000");
-        $(".liPagUno").removeClass("activado");
-        $(".liPagDos").addClass("activado");
-        $(".liPagTres").removeClass("activado");
-        $("#tabla_uno").css("display", "none");
-        $("#tabla_dos").css("display", "block");
-        $("#tabla_tres").css("display", "none");
-        $(".previous").removeClass("disabled");
-        $(".next").removeClass("disabled");
-    });
-
-    $( "#numTres" ).click(function() {
-        $("#numUno").css("color", "#000");
-        $("#numDos").css("color", "#000");
-        $("#numTres").css("color", "#fff");
-        $(".liPagUno").removeClass("activado");
-        $(".liPagDos").removeClass("activado");
-        $(".liPagTres").addClass("activado");
-        $("#tabla_uno").css("display", "none");
-        $("#tabla_dos").css("display", "none");
-        $("#tabla_tres").css("display", "block");
-        $(".next").addClass("disabled");
-    });
-
-    $( "#numUno" ).click(function() {
-        $("#numUno").css("color", "#fff");
-        $("#numDos").css("color", "#000");
-        $("#numTres").css("color", "#000");
-        $(".liPagUno").addClass("activado");
-        $(".liPagDos").removeClass("activado");
-        $(".liPagTres").removeClass("activado");
-        $("#tabla_uno").css("display", "block");
-        $("#tabla_dos").css("display", "none");
-        $("#tabla_tres").css("display", "none");
-        $(".previous").addClass("disabled");
+    $('#pagination-demo').twbsPagination({
+        totalPages: 3,
+        visiblePages: 3,
+        next: '<i class="material-icons">chevron_right</i>',
+        prev: '<i class="material-icons">chevron_left</i>',
+        onPageClick: function (event, page) {
+            $(".first").css("display", "none");
+            $(".last").css("display", "none");
+            $("#pagination-demo li:nth-child(3)").click(function(){
+                $("#tabla_uno").css("display", "block");
+                $("#tabla_dos").css("display", "none");
+                $("#tabla_tres").css("display", "none");
+            });
+            $("#pagination-demo li:nth-child(4)").click(function(){
+                $("#tabla_uno").css("display", "none");
+                $("#tabla_dos").css("display", "block");
+                $("#tabla_tres").css("display", "none");
+            });
+            $("#pagination-demo li:nth-child(5)").click(function(){
+                $("#tabla_uno").css("display", "none");
+                $("#tabla_dos").css("display", "none");
+                $("#tabla_tres").css("display", "block");
+            });
+            $(".prev").click(function(){
+                if($("#pagination-demo li:nth-child(4)").hasClass("active")){
+                    $(this).removeClass("active");
+                    $("#pagination-demo li:nth-child(3)").addClass("active");
+                    $("#tabla_uno").css("display", "block");
+                    $("#tabla_dos").css("display", "none");
+                    $("#tabla_tres").css("display", "none");
+                }
+                else if($("#pagination-demo li:nth-child(5)").hasClass("active")){
+                    $(this).removeClass("active");
+                    $("#pagination-demo li:nth-child(4)").addClass("active");
+                    $("#tabla_uno").css("display", "none");
+                    $("#tabla_dos").css("display", "block");
+                    $("#tabla_tres").css("display", "none");
+                }
+            });
+            $(".next").click(function(){
+                if($("#pagination-demo li:nth-child(3)").hasClass("active")){
+                    $(this).removeClass("active");
+                    $("#pagination-demo li:nth-child(4)").addClass("active");
+                    $("#tabla_uno").css("display", "none");
+                    $("#tabla_dos").css("display", "block");
+                    $("#tabla_tres").css("display", "none");
+                }
+                else if($("#pagination-demo li:nth-child(4)").hasClass("active")){
+                    $(this).removeClass("active");
+                    $("#pagination-demo li:nth-child(5)").addClass("active");
+                    $("#tabla_uno").css("display", "none");
+                    $("#tabla_dos").css("display", "none");
+                    $("#tabla_tres").css("display", "block");
+                }
+            });
+        }
     });
 });
