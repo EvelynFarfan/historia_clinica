@@ -135,7 +135,7 @@ nav a.button-collapse{
 	padding: 0 0 5% 0;
 }
 .colorBackground{
-	padding: 6% 0;
+	padding: 12% 0;
 	background-color: #336699;
 }
 .textWhite{
@@ -193,9 +193,13 @@ nav a.button-collapse{
 	color: #fff;
 }
 .buttonComentarios{
-	width: 100%;
+	/*width: 100%;
 	margin: 0 0 5% 0;
-	color: #369;
+	color: #369;*/
+	width: 96%;
+    margin: 0 0 5% 0;
+    color: #369;
+    margin: 0 10px;
 }
 /*- - - - - - - - - - - - Normativas - - - - - -- - -  -*/
 .normativas{
@@ -385,9 +389,9 @@ footer{
 }
 textarea.materialize-textarea {
     overflow-y: hidden;
-    padding: .8rem 0 5.9rem 0 !important;
+   /* padding: 1.8rem 0 5.9rem 0 !important;*/
     resize: none;
-    min-height: 3rem;
+    min-height: 6rem;
 }
 .contenedorInput{
 	width: 90%;

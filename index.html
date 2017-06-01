@@ -96,9 +96,6 @@
 				</div>
 				<div class="col s12 m12 l12 xl6 colVideo">
 					<div class="contentVideo video-container">
-						<!-- <video class="responsive-video" controls>
-						    <source src="videos/zoom_0.mp4" type="video/mp4">
-						</video> -->
 						<iframe width="100%" height="315" src="https://www.youtube.com/embed/CI-dQiaDsJo" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
@@ -396,19 +393,19 @@
 			<hr class="lineaWhite"></hr>
 		</div>
 		<div class="container">
-			<div>
-		        <div class="row">
-		            <form class="formValidate" id="formValidate" method="get" action="">
-		                <div class="row">
-		                	<div class="col l6">
-		                		<div class="input-field col s12">
+	        <div class="row">
+	            <form class="formValidate" id="formValidate" method="get" action="">
+	                <div class="row">
+	                	<div class="col s12 l6">
+	                		<div class="contenedorInput center-block">
+	                			<div class="input-field col s12">
 			                        <label for="uname" class="textWhite">Nombres y Apellidos*</label>
 			                        <input id="uname" name="uname" type="text" data-error=".errorTxt1" class="borderWhite">
 			                        <div class="errorTxt1"></div>
 			                    </div>
 			                    <div class="input-field col s12">
 			                    	<label for="cdni" class="textWhite">DNI *</label>
-			                    	<input id="cdni" type="number" name="cdni" data-error=".errorTxt5" maxlength="8" class="borderWhite">
+			                    	<input id="cdni" type="number" name="cdni" data-error=".errorTxt5" class="borderWhite" maxlength="8">
 			                    	<div class="errorTxt5"></div>
 			                    </div>
 			                    <div class="input-field col s12">
@@ -416,96 +413,39 @@
 			                      <input id="cemail" type="email" name="cemail" data-error=".errorTxt2" class="borderWhite">
 			                      <div class="errorTxt2"></div>
 			                    </div>
-		                	</div>
-		                	<div class="col l6">
-		                		<div class="input-field col s12">
+	                		</div>
+	                	</div>
+	                	<div class="col s12 l6">
+	                		<div class="contenedorInput center-block">
+	                			<div class="input-field col s12">
 			                      <label for="password" class="textWhite">Teléfono *</label>
 			                      <input id="cphone" type="number" name="cphone" data-error=".errorTxt3" class="borderWhite">
 			                      <div class="errorTxt3"></div>
 			                    </div>
 			                    <div class="input-field col s12">
-			                      <label for="cpassword" class="textWhite">Confirm Password *</label>
-			                      <input id="cpassword" type="password" name="cpassword" data-error=".errorTxt4" class="borderWhite">
-			                      <div class="errorTxt4"></div>
+							        <textarea id="ccomentario" name="ccomentario" data-error=".errorTxt6" class="materialize-textarea borderWhite"></textarea>
+	          						<label for="textarea1" class="textWhite">Comentario</label>
+	          						<div class="errorTxt6"></div>
 			                    </div>
-		                	</div> 
-		                    <div class="input-field col s12">
-		                    	<div class="row">
-		                    		<div class="col l6 m6 s12 x12">
-										<div class="contenedorInput center-block">
-											<!-- <button id="botonLimpiar" class="white buttonComentarios waves-effect waves-light btn">Limpiar</button> -->
-											<a><button>hola</button></a>
-										</div>
+	                		</div>
+	                	</div> 
+	                    <div class="input-field col s12">
+	                    	<div class="row">
+	                    		<div class="col l6 m6 s12 x12">
+									<div class="contenedorInput center-block">
+										<button id="botonLimpiar" class="white buttonComentarios waves-effect waves-light btn">Limpiar</button>
 									</div>
-		                    		<div class="col s12 m6">
-		                    			<button id="botonEnviarComent" class="btn waves-effect waves-light submit" type="submit" name="action" class="borderWhite">Enviar
-		                          			<i class="mdi-content-send right"></i>
-		                        		</button>
-		                    		</div>
-		                    	</div>
-		                    </div>
-		                </div>
-		            </form>
-		        </div>
-		    </div>
-			<!-- <div class="row">
-
-			    <form class="col s12 l6 m6" id="register">
-			    	<div class="contenedorInput center-block">
-			    		<div class="row">
-					    		<div class="input-field col s12">
-					        		<input id="nane" name="name" type="text" class="validate borderWhite">
-					        		<label for="email" class="textWhite">Nombre y Apellido *</label>
-					    		</div>
-					    </div>
-					    	<div class="row">
-					    		<div class="input-field col s12">
-					        		<input id="dni" type="number" class="validate borderWhite">
-					        		<label for="email" class="textWhite">DNI*</label>
-					    		</div>
-					    	</div>
-					    	<div class="row">
-					        	<div class="input-field col s12">
-					        		<input id="email" type="text" class="validate borderWhite">
-					        		<label for="email" class="textWhite">Email*</label>
-					    		</div>
-					    	</div>
-					    </div>
-			    </form>
-			    <form class="col s12 l6 m6">
-			    	<div class="contenedorInput center-block">
-			    		<div class="row">
-				    		<div class="input-field col s12">
-						        <input id="numTelephone" type="number" class="validate borderWhite">
-						        <label for="icon_telephone" class="textWhite">Teléfono</label>
-				    		</div>
-				    	</div>
-				        <div class="row">
-				          <div class="input-field col s12">
-				            <textarea id="textarea1" class="materialize-textarea borderWhite"></textarea>
-	          				<label for="textarea1" class="textWhite">Comentario</label>
-				          </div>
-				        </div>	
-			    	</div>
-			    </form>
-			</div>
-			<div class="row">
-		    	<div class="col s12">
-		    		<span class="textWhite camposOblig">Los Campos con (*) son obligatorios.</span>
-		    	</div>
-			</div>
-			<div class="row">
-				<div class="col l6 m6 s12 x12">
-					<div class="contenedorInput center-block">
-						<button class="white buttonComentarios waves-effect waves-light btn">Limpiar</button>
-					</div>
-				</div>
-				<div class="col l6 m6 s12 x12 right-align">
-					<div class="contenedorInput center-block">
-						<button class="white buttonComentarios waves-effect waves-light btn" id="buttonEnviarHome" type="submit">Enviar</button>
-					</div>
-				</div>
-			</div> -->
+								</div>
+	                    		<div class="col l6 m6 s12 x12">
+	                    			<div class="contenedorInput center-block">
+										<button id="botonEnviarComent" class="white buttonComentarios waves-effect waves-light btn" type="submit">Enviar</button>
+									</div>
+	                    		</div>
+	                    	</div>
+	                    </div>
+	                </div>
+	            </form>
+	        </div>
 		</div>
 	</section>
 	<section class="contentPreguntas fs17" id="preguntas">
